@@ -8,11 +8,11 @@ import { SiCsswizardry } from "react-icons/si";
 export const languages = [
   {
     name: "javascript",
-    icon: <SiJavascript />,
+    icon: <SiJavascript color="yellow" />,
   },
   {
     name: "html",
-    icon: <SiHtml5 />,
+    icon: <SiHtml5 color="blue" />,
   },
   {
     name: "python",
