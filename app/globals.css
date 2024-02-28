@@ -9,10 +9,7 @@
 body {
 }
 
-<<<<<<< HEAD
-=======
 .glass {
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -21,7 +18,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
->>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
 .background-color {
   width: 100%;
   height: 46px;

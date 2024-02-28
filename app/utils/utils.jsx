@@ -58,7 +58,6 @@ export const backgrounds = [
   "linear-gradient(140deg, rgb(165, 142, 251), rgb(233, 191, 248))",
   "linear-gradient(270deg,#514a9d,#24c6dc)",
 ];
-<<<<<<< HEAD
 
 export const paddings = ["1rem", "2rem", "3rem"];
 
@@ -74,5 +73,3 @@ export const initialCode = `function guessMyNumber() {
 }
 
 console.log(guessMyNumber());`;
-=======
->>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
