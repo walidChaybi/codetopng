@@ -7,15 +7,17 @@
 }
 
 body {
-  background-color: #0d0d0d;
-  color: #848484;
+}
+
+.background-color {
+  width: 100%;
+  height: 46px;
 }
 
 .code-title {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border: 2px solid rgba(249, 249, 249, 0.08);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 .ace_scrollbar {
