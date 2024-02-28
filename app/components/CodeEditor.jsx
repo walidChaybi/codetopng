@@ -25,18 +25,25 @@ function CodeEditor({
   padding,
 }) {
   const [width, setWidth] = useState(1000);
-  const [height, setHeight] = useState(500);
+  const [height, setHeight] = useState(1000);
 
+<<<<<<< HEAD
   const [code, setCode] = useState(initialCode);
   const [title, setTitle] = useState("untitled-1");
 
+=======
+>>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
   const updateSize = () => {
     setWidth(window.innerWidth);
   };
 
   const handleResize = (evt, direction, ref, pos) => {
     const newHeight = ref.style.height;
+<<<<<<< HEAD
     setHeight(parseInt(newHeight, 10) + 1);
+=======
+    setHeight(parseInt(newHeight, 10));
+>>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
   };
 
   useEffect(() => {
@@ -61,12 +68,16 @@ function CodeEditor({
         background: background,
       }}
     >
+<<<<<<< HEAD
       <div
         className="code-block"
         style={{
           padding: padding,
         }}
       >
+=======
+      <div className="code-block">
+>>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
         <div className="code-title h-[52px] px-4 flex items-center justify-between bg-black bg-opacity-80">
           <div className="dots flex items-center gap-1">
             <div className="w-3 h-3 rounded-full bg-[#ff5656]"></div>
@@ -86,7 +97,10 @@ function CodeEditor({
           </div>
         </div>
         <AceEditor
+<<<<<<< HEAD
           value={code}
+=======
+>>>>>>> a6000a5e942978f92a46db8e4220f01e6f21c39e
           name="code-editor-id"
           theme={theme.toLowerCase()}
           mode={language.toLowerCase()}
