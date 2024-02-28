@@ -87,7 +87,10 @@ function CodeEditor({
             <div className="w-3 h-3 rounded-full bg-[#ffbc6a]"></div>
             <div className="w-3 h-3 rounded-full bg-[#67f772]"></div>
           </div>
-          <div className="input-control w-full">
+          <div
+            className="input-control w-full tooltip"
+            data-tip="Click to change the name"
+          >
             <input
               onChange={(e) => setTitle(e.target.value)}
               value={title}
