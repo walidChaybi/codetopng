@@ -23,6 +23,11 @@ body {
   height: 46px;
 }
 
+.handle {
+  transition: all 0.4s ease-in-out;
+  pointer-events: none;
+}
+
 .code-title {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
