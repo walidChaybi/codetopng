@@ -24,29 +24,29 @@ function CodeEditor({
   currentPadding,
 }) {
   const [width, setWidth] = useState(1000);
-  const [height, setHeight] = useState(500);
+  const [height, setHeight] = useState(1000);
 
-  const handleResize = (e, direction, ref, pos) => {
-    const newHeight = ref.style.height;
-    setHeight(parseInt(newHeight));
+  const updateSize = () => {
+    setWidth(window.innerWidth);
   };
 
-  // const updateSize = () => {
-  //   setWidth(window.innerWidth);
-  // };
+  const handleResize = (evt, direction, ref, pos) => {
+    const newHeight = ref.style.height;
+    setHeight(parseInt(newHeight, 10));
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("resize", updateSize);
-  //   updateSize();
+  useEffect(() => {
+    window.addEventListener("resize", updateSize);
+    updateSize();
 
-  //   return () => window.removeEventListener("resize", updateSize);
-  // }, []);
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
 
   return (
     <Resizable
-      minHeight={450}
-      minWidth={510}
-      maxWidth={1500}
+      minHeight={500}
+      maxHeight={800}
+      minWidth={500}
       defaultSize={{
         width: width,
         height: height || 500,
@@ -55,7 +55,7 @@ function CodeEditor({
       className="resize-container relative"
     >
       <div className="code-block">
-        <div className="code-title h-[52px] px-4  flex items-center justify-between bg-black bg-opacity-80">
+        <div className="code-title h-[52px] px-4 flex items-center justify-between bg-black bg-opacity-80">
           <div className="dots flex items-center gap-1">
             <div className="w-3 h-3 rounded-full bg-[#ff5656]"></div>
             <div className="w-3 h-3 rounded-full bg-[#ffbc6a]"></div>
@@ -72,10 +72,9 @@ function CodeEditor({
           </div>
         </div>
         <AceEditor
-          value="import React from 'react';"
           name="code-editor-id"
-          theme="monokai"
-          mode={language}
+          theme={theme.toLowerCase()}
+          mode={language.toLowerCase()}
           fontSize={16}
           showGutter={false}
           wrapEnabled={true}
