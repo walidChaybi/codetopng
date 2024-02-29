@@ -4,11 +4,16 @@ import { SiPython } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { SiCsswizardry } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
 
 export const languages = [
   {
     name: "Javascript",
     icon: <SiJavascript color="yellow" size={20} />,
+  },
+  {
+    name: "Golang",
+    icon: <FaGolang color="skyblue" size={20} />,
   },
   {
     name: "HTML",
